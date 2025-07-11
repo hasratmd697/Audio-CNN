@@ -59,6 +59,7 @@ class InferenceRequest(BaseModel):
 
 # Modal server class for audio classification
 @app.cls(image=image, gpu="A10G", volumes={"/models": model_volume}, scaledown_window=15)
+
 class AudioClassifier:
     # Load model and preprocessing tools when container starts
     @modal.enter()
@@ -83,6 +84,9 @@ class AudioClassifier:
     # Define an HTTP POST endpoint for inference
     @modal.fastapi_endpoint(method="POST")
     def inference(self, request: InferenceRequest):
+        # production: frontend -> upload file to s3 -> inference endpoint -> download from s3 bucket
+        # frontend -> send file directly -> inference endpoint
+        
         # Decode base64 audio data to raw bytes
         audio_bytes = base64.b64decode(request.audio_data)
 
@@ -162,7 +166,7 @@ class AudioClassifier:
 @app.local_entrypoint()
 def main():
     # Read the local WAV file
-    audio_data, sample_rate = sf.read("chirpingbirds.wav")
+    audio_data, sample_rate = sf.read("1-13572-A-46.wav")
 
     # Encode the audio as base64
     buffer = io.BytesIO()
