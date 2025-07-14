@@ -1,10 +1,7 @@
 # Audio CNN
 
-![alt text](<img width="1280" height="720" alt="thumbnail" src="https://github.com/user-attachments/assets/9cae1e3c-4d9b-4b13-a82d-771c2240b09e" />)
+<img width="1280" height="720" alt="thumbnail" src="https://github.com/user-attachments/assets/4a46d85a-f2fb-4ea3-973e-b41881f8e274" />
 
-[Link to video](https://youtu.be/KLYfwigQPuY)
-
-[Discord and more](https://www.andreastrolle.com/)
 
 ## Overview
 
