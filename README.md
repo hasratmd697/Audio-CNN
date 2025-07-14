@@ -32,7 +32,7 @@ Follow these steps to install and set up the project.
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/Andreaswt/audio-cnn.git](https://github.com/hasratmd697/Audio-CNN.git
+https://github.com/hasratmd697/Audio-CNN.git
 ```
 
 ### Install Python
