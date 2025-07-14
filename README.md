@@ -1,6 +1,6 @@
 # Audio CNN
 
-<img width="1280" height="720" alt="thumbnail" src="https://github.com/user-attachments/assets/4a46d85a-f2fb-4ea3-973e-b41881f8e274" />
+<img width="1920" height="1001" alt="Screenshot 2025-07-14 094831" src="https://github.com/user-attachments/assets/d8ac076b-6cc7-4cc8-88b0-48fb5b1ed0c0" />
 
 
 ## Overview
