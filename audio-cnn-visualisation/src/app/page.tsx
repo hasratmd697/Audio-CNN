@@ -142,7 +142,7 @@ export default function HomePage() {
           ),
         );
 
-        const response = await fetch("https://hasratmd697--audio-cnn-inference-audioclassifier-inference.modal.run/", {
+        const response = await fetch("inference_url_here", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ audio_data: base64String }),
